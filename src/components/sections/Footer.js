@@ -13,7 +13,7 @@ import { ReactComponent as TwitterIcon } from '@static/icons/twitter.svg';
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    link: 'https://github.com/honeymkr',
   },
   {
     icon: InstagramIcon,
@@ -21,7 +21,7 @@ const SOCIAL = [
   },
   {
     icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    link: 'https://twitter.com/GravityHand',
   },
 ];
 
@@ -56,8 +56,8 @@ const Footer = () => (
               <span>
                 Visionary Coaching by
                 {` `}
-                <ExternalLink href="#">
-                  @handofgravity
+                <ExternalLink href="mailto:jason@handofgravity.com">
+                  jason@handofgravity.com
                 </ExternalLink>
               </span>
             </Copyright>

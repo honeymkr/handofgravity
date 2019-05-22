@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 
-const About = () => (
+const Coaching = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -44,13 +44,16 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="coaching">
         <Container>
           <Grid>
             <div>
-              <h2>One-on-One Coaching - Partnership</h2>
+              <h2>1:1 Coaching</h2>
               <p>
-                What's the experience of my coaching?
+                People partner with me on their initiatives to expand their visions and structure themselves for success. 
+                Everyday I work with people dealing with their careers + fulfilling on creative projects. 
+                I help community initiatives expand leadership for their causes.
+
               </p>
             </div>
             <Art>
@@ -62,23 +65,21 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Jason Faulkner</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+              Artist, Entrepreneur, Visionary Coach. 
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>Brilliance creates Gravity</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                How do you created or expand the gravitas of your projects or concerns so that
+                things may transform either one step at a time or in one quantum leap?.
                 <br />
                 <br />
-                Gatsby is fast in every way thadfjdjkhdfjkhdfghjkfdghjkfdgjkhfgdhjkfgdjhkt matters.
+                Hand of Gravity is here to serve your vision for the world.
               </p>
             </div>
             <Art>
@@ -136,4 +137,4 @@ const Art = styled.figure`
   width: 100%;
 `;
 
-export default About;
+export default Coaching;
