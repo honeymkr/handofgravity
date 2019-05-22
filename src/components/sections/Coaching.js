@@ -78,7 +78,7 @@ const About = () => (
                 site you want to build and nothing more.
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                Gatsby is fast in every way thadfjdjkhdfjkhdfghjkfdghjkfdgjkhfgdhjkfgdjhkt matters.
               </p>
             </div>
             <Art>
