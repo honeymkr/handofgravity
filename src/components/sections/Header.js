@@ -30,19 +30,15 @@ const Header = () => (
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text>
-              <h1>
-                Expressionists
+              <h2>Visionary Coaching for</h2>
+              <h3>
+                Creative Expressionists
                 <br />
-                Humanitarians
+                Humanitarians and
                 <br />
                 Entrepreneurs
-              </h1>
+              </h3>
               <br />
-              <p>
-                <StyledExternalLink href="https://handofgravity.com">
-                  Join the club!?! &nbsp;&#x2794;
-                </StyledExternalLink>
-              </p>
             </Text>
           </Grid>
         </Container>

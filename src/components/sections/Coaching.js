@@ -50,9 +50,10 @@ const Coaching = () => (
             <div>
               <h2>1:1 Coaching</h2>
               <p>
-                People partner with me on their initiatives to expand their visions and structure themselves for success. 
-                Everyday I work with people dealing with their careers + fulfilling on creative projects. 
-                I help community initiatives expand leadership for their causes.
+                I partner with people who are starting businesses or expanding existing business projects. 
+                <br>
+                Creative Expressionists find me to be an indispensable source 
+
 
               </p>
             </div>
