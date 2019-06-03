@@ -50,11 +50,7 @@ const Coaching = () => (
             <div>
               <h2>1:1 Coaching</h2>
               <p>
-                I partner with people who are starting businesses or expanding existing business projects. 
-                <br>
-                Creative Expressionists find me to be an indispensable source 
-
-
+                I partner with people who are starting businesses or expanding existing business projects.
               </p>
             </div>
             <Art>
