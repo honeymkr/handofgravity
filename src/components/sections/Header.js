@@ -26,19 +26,26 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
+
             <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
+
             <Text>
-              <h2>Visionary Coaching for</h2>
-              <h3>
-                Creative Expressionists
-                <br />
-                Humanitarians and
-                <br />
-                Entrepreneurs
-              </h3>
-              <br />
+              <h2>Visionary Coaching</h2>
+              <p>I'm an expert on creativity, invention and relationships.<br/>
+
+                My specialty is helping people who are struggling to actualize their ideas, dreams 
+                or business ventures.
+
+                I'm not a Mr. Fix-It for your problems, I'm a Master of Possibility.
+                <br/>
+                
+                Typically, we as humans live day to day within the confines of our limiting thoughts and beliefs.
+                This is how we end up sick and tired of being sick and tired. 
+                You probably know what I'm talking about and if you're ready to step through the mirror,
+                then you've come to the right place!
+              </p>
             </Text>
           </Grid>
         </Container>
@@ -62,7 +69,6 @@ const Art = styled.figure`
 
   > div {
     width: 120%;
-    margin-bottom: -4.5%;
 
     @media (max-width: ${props => props.theme.screen.md}) {
       width: 100%;
@@ -81,7 +87,7 @@ const Grid = styled.div`
     grid-gap: 80px;
 
     > ${Art} {
-      order: 2;
+      order: 0;
     }
   }
 `;

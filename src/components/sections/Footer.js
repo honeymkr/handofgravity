@@ -6,24 +6,6 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as GithubIcon } from '@static/icons/github.svg';
-import { ReactComponent as InstagramIcon } from '@static/icons/instagram.svg';
-import { ReactComponent as TwitterIcon } from '@static/icons/twitter.svg';
-
-const SOCIAL = [
-  {
-    icon: GithubIcon,
-    link: 'https://github.com/honeymkr',
-  },
-  {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/honeymkr',
-  },
-  {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/GravityHand',
-  },
-];
 
 const Footer = () => (
   <StaticQuery
@@ -31,7 +13,7 @@ const Footer = () => (
       query {
         art_pot: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "customers_pot" }
+          name: { eq: "build" }
         ) {
           childImageSharp {
             fluid(maxWidth: 960) {
@@ -52,20 +34,16 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Hand Of Gravity</h2>
+              <h2>Connect</h2>
               <span>
-                Visionary Coaching by
+                Join us on
                 {` `}
-                <ExternalLink href="mailto:jason@handofgravity.com">
-                  jason@handofgravity.com
+                <ExternalLink href="https://www.facebook.com/Hand-Of-Gravity-2303130916616921">
+                  FACEBOOK
                 </ExternalLink>
               </span>
             </Copyright>
-            <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink href={link}>{icon()}</ExternalLink>
-              ))}
-            </SocialIcons>
+           
           </StyledContainer>
         </FooterWrapper>
       </React.Fragment>
@@ -73,20 +51,7 @@ const Footer = () => (
   />
 );
 
-const SocialIcons = styled.div`
-  display: flex;
 
-  svg {
-    color: ${props => props.theme.color.black.regular};
-    margin: 0 8px;
-    width: 24px;
-    height: 24px;
-  }
-
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    margin-top: 40px;
-  }
-`;
 
 const FooterWrapper = styled.footer`
   background-color: ${props => props.theme.color.primary};
