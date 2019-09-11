@@ -2,11 +2,11 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Visionary Coaching by Jason Faulkner - New York City',
+  description: 'Visionary Coaching by Jason Faulkner',
   title: 'Hand Of Gravity',
   url: 'handofgravity.com',
   author: 'ajayns',
-  keywords: ['gatsby', 'site', 'absurd'],
+  keywords: ['coaching', 'creativity', 'focus'],
   twitter: {
     id: '@handofgravity',
     img: '',

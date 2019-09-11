@@ -7,12 +7,13 @@ import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
+
   <StaticQuery
     query={graphql`
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "wavy" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -22,31 +23,30 @@ const Header = () => (
         }
       }
     `}
+
+
     render={data => (
       <HeaderWrapper>
         <Container>
           <Grid>
-
-            <Art>
+              <Art>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
-
             <Text>
-              <h2>Visionary Coaching</h2>
-              <p>I'm an expert on creativity, invention and relationships.<br/>
+            
+              <h3>
+            Vision is the most important aspect of your work! It's what inspires people into action and wakes them up. 
+            It's what makes things fun and easy when everyone is working together, thinking together!
+            Vision carries the spirit of a group by enabling a sense of connection to the big picture. 
+            It may seem like magic but it's not. It takes intentional focus by leaders like you to maintain the 
+            light at the end of the tunnel or the big prize in the sky, so to speak..
+            Consider what happens to Vision after awhile: it disappears
+            with the onslaught of project circumstances, reasons, doubts and conditional thinking. Hand of Gravity 
+            is about training you to create and cultivate vision that shakes things up!
 
-                My specialty is helping people who are struggling to actualize their ideas, dreams 
-                or business ventures.
 
-                I'm not a Mr. Fix-It for your problems, I'm a Master of Possibility.
-                <br/>
-                
-                Typically, we as humans live day to day within the confines of our limiting thoughts and beliefs.
-                This is how we end up sick and tired of being sick and tired. 
-                You probably know what I'm talking about and if you're ready to step through the mirror,
-                then you've come to the right place!
-              </p>
-            </Text>
+              </h3>
+  </Text>
           </Grid>
         </Container>
       </HeaderWrapper>
@@ -58,7 +58,7 @@ const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
   padding-top: 96px;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.sm}) {
     padding-top: 128px;
   }
 `;
@@ -68,9 +68,9 @@ const Art = styled.figure`
   margin: 0;
 
   > div {
-    width: 120%;
+    width: 100%;
 
-    @media (max-width: ${props => props.theme.screen.md}) {
+    @media (max-width: ${props => props.theme.screen.sm}) {
       width: 100%;
     }
   }
@@ -95,7 +95,7 @@ const Grid = styled.div`
 const Text = styled.div`
   justify-self: center;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.sm}) {
     justify-self: start;
   }
 `;

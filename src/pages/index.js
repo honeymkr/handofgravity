@@ -6,13 +6,18 @@ import Navbar from '@common/Navbar';
 import Header from '@sections/Header';
 
 
-import Faq from '@sections/Faq';
+import Coaching from '@sections/Coaching';
+import Bookacall from '@sections/Bookacall';
+import Facebook from '@sections/Facebook'
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
   <Layout>   
     <Navbar />
     <Header/>
+    <Coaching/>
+    <Bookacall/>
+    <Facebook/>
     <Footer />
   </Layout>
 );

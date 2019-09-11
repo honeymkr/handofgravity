@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import Intro from '../../images/introslide/intro-sample.mp4';
 
 import { Section, Container } from '@components/global';
 
@@ -47,47 +48,20 @@ const Coaching = () => (
       <Section id="coaching">
         <Container>
           <Grid>
-            <div>
-              <h2>1:1 Coaching</h2>
-              <p>
-                I partner with people who are starting businesses or expanding existing business projects.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
-            </Art>
-          </Grid>
-          <Grid inverse>
-            <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
-            </Art>
-            <div>
-              <h2>Jason Faulkner</h2>
-              <p>
-              Artist, Entrepreneur, Visionary Coach. 
-              </p>
-            </div>
-          </Grid>
-          <Grid>
-            <div>
-              <h2>Brilliance creates Gravity</h2>
-              <p>
-                How do you created or expand the gravitas of your projects or concerns so that
-                things may transform either one step at a time or in one quantum leap?.
-                <br />
-                <br />
-                Hand of Gravity is here to serve your vision for the world.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
-            </Art>
+          
+         
+
           </Grid>
         </Container>
       </Section>
     )}
   />
 );
+
+const Video = styled.video`
+max-width: 640px;
+`;
+
 
 const Grid = styled.div`
   display: grid;

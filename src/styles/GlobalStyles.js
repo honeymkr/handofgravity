@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h3 {
-    ${props => props.theme.font_size.large};
+    ${props => props.theme.font_size.regular};
   }
 
   p {
