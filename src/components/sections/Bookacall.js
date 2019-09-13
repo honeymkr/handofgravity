@@ -4,18 +4,17 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
 const BookaCall = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_story: file(
+        art_book: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "tell_story" }
+          name: { eq: "bookme" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -24,73 +23,86 @@ const BookaCall = () => (
     `}
     render={data => (
       <Section id="book-a-call" accent>
+<Container>
+  <Grid>
 
-        <StyledContainer>
-          <div>
-            <h1>Book a call</h1>
-            <span>
-            <ExternalLink href="https://calendly.com/handofgravity/">
-                  GRAB A TIME SLOT NOW
-                </ExternalLink>
+  <Button
+      href="https://calendly.com/handofgravity/"
+      target="_blank"
+      rel="noopener"
+      primary
+    >
+      Book A Breakthrough Session Now
+    </Button>
 
-            </span>
          
-           
-          
-          </div>
           <Art>
-            <Img fluid={data.art_story.childImageSharp.fluid} />
+            <Img fluid={data.art_book.childImageSharp.fluid} />
           </Art>
-        </StyledContainer>
 
+  </Grid>
+</Container>
       </Section>
     )}
   />
 );
 
-const LogoGrid = styled.div`
+const Grid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 64px;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 40px;
+  text-align: right;
+  align-items: center;
   justify-items: center;
-  margin-top: 96px;
+  margin: 24px 0;
 
-  a {
-    svg {
-      width: 100%;
-    }
+  ${props =>
+    props.inverse &&
+    `
+    text-align: left;
+    grid-template-columns: 2fr 3fr;
+  `}
+
+  h2 {
+    margin-bottom: 16px;
   }
 
-  @media (max-width: ${props => props.theme.screen.sm}) {
+  @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
+    text-align: left;
+    margin-bottom: 96px;
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+
+    ${props =>
+      props.inverse &&
+      `
+        ${Art} {
+          order: 2;
+        }
+    `}
   }
 `;
 
-const StyledContainer = styled(Container)`
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    justify-content: center;
-  }
+const Button = styled.a`
+/* This renders the buttons above... Edit me! */
+display: inline-block;
+border-radius: 3px;
+padding: 0.7rem 0.5rem;
+margin: 0.5rem 1rem;
+background: red;
+color: black;
+border: 2px solid white;
+text-decoration: none;
+font-size: 2rem;
 `;
 
 const Art = styled.figure`
-  width: 600px;
-  position: absolute;
-  top: -12%;
-  right: 50%;
-
-  @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 0;
-    right: 65%;
-    width: 500px;
-  }
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
-  }
+margin: 0;
+max-width: 380px;
+width: 100%;
 `;
 
 export default BookaCall;

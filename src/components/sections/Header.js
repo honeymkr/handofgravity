@@ -4,19 +4,18 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
 
   <StaticQuery
     query={graphql`
       query {
-        art_build: file(
+        art_logo: file(
           sourceInstanceName: { eq: "art" }
           name: { eq: "wavy" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 100) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -30,24 +29,25 @@ const Header = () => (
         <Container>
           <Grid>
               <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+              <Img fluid={data.art_logo.childImageSharp.fluid} />
             </Art>
-            <Text>
-            
-              <h3>
-            Vision is the most important aspect of your work! It's what inspires people into action and wakes them up. 
+
+           <div>  <h2>Vision</h2>
+           <p>
+            Is the most important aspect of your work! It's what inspires people into action and wakes them up. 
             It's what makes things fun and easy when everyone is working together, thinking together!
             Vision carries the spirit of a group by enabling a sense of connection to the big picture. 
             It may seem like magic but it's not. It takes intentional focus by leaders like you to maintain the 
             light at the end of the tunnel.
-            </h3>
-            <h3>
+            </p>
+            <p>
             Do you have a major project that's stalling? Do you have the sense of 'doing everything on your own'?
             Big projects are riddled with circumstances that can leave leadership tired, feeling like they can't find 
             the right help! 
-              </h3>
-              <h3>If you're tired of spinning your wheels - you've come to the right place.</h3>
-  </Text>
+              </p>
+              <p>If you're tired of spinning your wheels - you've come to the right place.</p></div>
+           
+
           </Grid>
         </Container>
       </HeaderWrapper>
@@ -93,21 +93,5 @@ const Grid = styled.div`
   }
 `;
 
-const Text = styled.div`
-  justify-self: center;
-
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    justify-self: start;
-  }
-`;
-
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
-
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
-  }
-`;
 
 export default Header;

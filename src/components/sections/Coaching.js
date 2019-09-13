@@ -2,54 +2,45 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Intro from '../../images/introslide/intro-sample.mp4';
-
 import { Section, Container } from '@components/global';
 
 const Coaching = () => (
   <StaticQuery
-    query={graphql`
-      query {
-        art_fast: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_learn: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "learn_yourself" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
-        art_ideas: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
+  query={graphql`
+  query {
+    art_glow: file(
+      sourceInstanceName: { eq: "art" }
+      name: { eq: "glow" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 615) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
-    `}
+    }
+  }
+`}
     render={data => (
       <Section id="coaching">
         <Container>
-          <Grid>
+        <Grid>
           
+          <div>
+              <h2>Visionary Coaching</h2>
+              <p>
+                What we're talking about is going to work on your vision - be it a business, special project
+                or life change. This is for people who are committed to something HUGE and are confronted by 
+                the many defining circumstances standing in the way. This isn't just for creative people - This is for uncreative 
+                people to get what the best creatives have - FREEDOM. 
+              </p>
+              <p>How can you do this?</p>
+              <h3>Hand of Gravity trains you to cultivate your vision so that you're left with a 
+                life of joy, fun and freedom in your future endeavors!</h3>
+            </div>
          
+            <Art>
+              <Img fluid={data.art_glow.childImageSharp.fluid} />
+            </Art>
 
           </Grid>
         </Container>
@@ -57,11 +48,6 @@ const Coaching = () => (
     )}
   />
 );
-
-const Video = styled.video`
-max-width: 640px;
-`;
-
 
 const Grid = styled.div`
   display: grid;
