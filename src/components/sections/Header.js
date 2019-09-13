@@ -39,13 +39,14 @@ const Header = () => (
             It's what makes things fun and easy when everyone is working together, thinking together!
             Vision carries the spirit of a group by enabling a sense of connection to the big picture. 
             It may seem like magic but it's not. It takes intentional focus by leaders like you to maintain the 
-            light at the end of the tunnel or the big prize in the sky, so to speak..
-            Consider what happens to Vision after awhile: it disappears
-            with the onslaught of project circumstances, reasons, doubts and conditional thinking. Hand of Gravity 
-            is about training you to create and cultivate vision that shakes things up!
-
-
+            light at the end of the tunnel.
+            </h3>
+            <h3>
+            Do you have a major project that's stalling? Do you have the sense of 'doing everything on your own'?
+            Big projects are riddled with circumstances that can leave leadership tired, feeling like they can't find 
+            the right help! 
               </h3>
+              <h3>If you're tired of spinning your wheels - you've come to the right place.</h3>
   </Text>
           </Grid>
         </Container>

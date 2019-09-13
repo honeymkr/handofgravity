@@ -29,7 +29,7 @@ const BookaCall = () => (
           <div>
             <h1>Book a call</h1>
             <span>
-            <ExternalLink href="https://calendly.com/s/ah6HnZV7">
+            <ExternalLink href="https://calendly.com/handofgravity/">
                   GRAB A TIME SLOT NOW
                 </ExternalLink>
 
