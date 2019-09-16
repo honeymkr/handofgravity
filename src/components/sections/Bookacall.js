@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -25,7 +25,17 @@ const BookaCall = () => (
       <Section id="book-a-call" accent>
 <Container>
   <Grid>
+      <div>
 
+    
+              <p>
+                What we're talking about is going to work on your vision - be it a business, special project
+                or life change. This is for people who are committed to something HUGE and are confronted by 
+                the many defining circumstances standing in the way. This isn't just for creative people - This is for uncreative 
+                people to get what the best creatives have - FREEDOM. 
+              </p>
+              <p>How can you do this?</p>
+              
   <Button
       href="https://calendly.com/handofgravity/"
       target="_blank"
@@ -34,7 +44,7 @@ const BookaCall = () => (
     >
       Book A Breakthrough Session Now
     </Button>
-
+    </div>
          
           <Art>
             <Img fluid={data.art_book.childImageSharp.fluid} />
@@ -89,14 +99,22 @@ const Grid = styled.div`
 const Button = styled.a`
 /* This renders the buttons above... Edit me! */
 display: inline-block;
-border-radius: 3px;
+border-radius: 9px;
 padding: 0.7rem 0.5rem;
 margin: 0.5rem 1rem;
 background: red;
 color: black;
-border: 2px solid white;
+font-family: 'Avenir',sans-serif;
 text-decoration: none;
 font-size: 2rem;
+
+${props => props.animated && css`
+    &:hover {
+      position: fixed;
+      transform: translate(0%, -30%);
+      transition: 0.3s ease-out;
+    }
+  `}
 `;
 
 const Art = styled.figure`

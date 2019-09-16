@@ -28,20 +28,17 @@ const Coaching = () => (
           <div>
               <h2>Visionary Coaching</h2>
               <p>
-                What we're talking about is going to work on your vision - be it a business, special project
-                or life change. This is for people who are committed to something HUGE and are confronted by 
-                the many defining circumstances standing in the way. This isn't just for creative people - This is for uncreative 
-                people to get what the best creatives have - FREEDOM. 
+            Do you have a major project that's stalling? Do you have the sense of 'doing everything on your own'?
+            Big projects are riddled with circumstances that can leave leadership tired, feeling like they can't find 
+            the right help! 
               </p>
-              <p>How can you do this?</p>
-              <h3>Hand of Gravity trains you to cultivate your vision so that you're left with a 
-                life of joy, fun and freedom in your future endeavors!</h3>
-            </div>
+              <p>If you're tired of spinning your wheels - you've come to the right place.</p>
+              </div>
          
             <Art>
               <Img fluid={data.art_glow.childImageSharp.fluid} />
             </Art>
-
+          
           </Grid>
         </Container>
       </Section>

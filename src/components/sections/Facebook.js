@@ -25,8 +25,13 @@ const Facebook = () => (
         <Section id="facebook" accent>
   <Container>
     <Grid>
-          
-              <Button
+          <div>
+        <h3>Learn More</h3>
+        <p>We've set up a Facebook group to host a community conversation about Being Visionary. 
+          We share weekly insights and feature members to highlight their transformations!
+          Ask questions and see what others are really getting by working with Hand Of Gravity.
+       </p>
+          <Button
       href="https://www.facebook.com/Hand-Of-Gravity-2303130916616921"
       target="_blank"
       rel="noopener"
@@ -35,6 +40,7 @@ const Facebook = () => (
       Join Our Facebook Community
     </Button>
            
+        </div>
            
             <Art>
               <Img fluid={data.art_community.childImageSharp.fluid} />
@@ -87,14 +93,13 @@ const Facebook = () => (
   `;
   
   const Button = styled.a`
-  /* This renders the buttons above... Edit me! */
   display: inline-block;
-  border-radius: 3px;
+  border-radius: 9px;
   padding: 0.7rem 0.5rem;
   margin: 0.5rem 1rem;
   background: red;
   color: black;
-  border: 2px solid white;
+  font-family: 'Avenir',sans-serif;
   text-decoration: none;
   font-size: 2rem;
 `;
@@ -102,7 +107,7 @@ const Facebook = () => (
 
   const Art = styled.figure`
   margin: 0;
-  max-width: 500px;
+  max-width: 615px;
   width: 100%;
   `;
 

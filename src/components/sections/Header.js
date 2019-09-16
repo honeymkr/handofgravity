@@ -15,7 +15,7 @@ const Header = () => (
           name: { eq: "wavy" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 100) {
+            fluid(maxWidth: 615) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -34,18 +34,13 @@ const Header = () => (
 
            <div>  <h2>Vision</h2>
            <p>
-            Is the most important aspect of your work! It's what inspires people into action and wakes them up. 
+            Is the most important aspect of your work! It's what inspires people into action! 
             It's what makes things fun and easy when everyone is working together, thinking together!
             Vision carries the spirit of a group by enabling a sense of connection to the big picture. 
             It may seem like magic but it's not. It takes intentional focus by leaders like you to maintain the 
             light at the end of the tunnel.
             </p>
-            <p>
-            Do you have a major project that's stalling? Do you have the sense of 'doing everything on your own'?
-            Big projects are riddled with circumstances that can leave leadership tired, feeling like they can't find 
-            the right help! 
-              </p>
-              <p>If you're tired of spinning your wheels - you've come to the right place.</p></div>
+           </div>
            
 
           </Grid>
