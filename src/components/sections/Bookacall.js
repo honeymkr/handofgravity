@@ -27,14 +27,16 @@ const BookaCall = () => (
   <Grid>
       <div>
 
-    
+            <h3>Free Intro Session</h3>
               <p>
-                What we're talking about is going to work on your vision - be it a business, special project
-                or life change. This is for people who are committed to something HUGE and are confronted by 
-                the many defining circumstances standing in the way. This isn't just for creative people - This is for uncreative 
-                people to get what the best creatives have - FREEDOM. 
+                Let's talk about your vision! Books, more videos and research are only going 
+                to serve to get minimal results beyond sounding smart at parties. 
+                
+                On the free call - we will expand and illuminate your project to identify 
+                new possibilities that have been hidden from you and your customers.
+
+                Then we will talk about whether Hand Of Gravity is right for you!
               </p>
-              <p>How can you do this?</p>
               
   <Button
       href="https://calendly.com/handofgravity/"
@@ -65,6 +67,7 @@ const Grid = styled.div`
   align-items: center;
   justify-items: center;
   margin: 24px 0;
+  background-color: white;
 
   ${props =>
     props.inverse &&
