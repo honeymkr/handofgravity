@@ -32,14 +32,22 @@ const Header = () => (
               <Img fluid={data.art_logo.childImageSharp.fluid} />
             </Art>
 
-           <div>  <h2>Vision</h2>
+           <div>  <h2>Visionary Coaching</h2>
            <p>
-            Is the most important aspect of your work! It's what inspires people into action! 
-            It's what makes things fun and easy when everyone is working together, thinking together!
-            Vision carries the spirit of a group by enabling a sense of connection to the big picture. 
-            It may seem like magic but it's not. It takes intentional focus by leaders like you to maintain the 
-            light at the end of the tunnel.
+            I work with successful people to expand their visions. I create
+            clarity, inspiration, and transformations in people's businesses, teams or projects
+            so that they're unleashed in life. 
+            <br/>
+            Vision is what carries the spirit of big ideas and brings things to existence. It's such a vital element
+            yet most people take Vision for granted. I see business owners struggle all the time with what 
+            they Think are their problems - unmotivated employees, doing everything themselves, circumstances and more.
+            <br/>
+            A lot of successful people feeling frustrated and drained! 
+            <br/>
+            I empower people to discover
+            and transform their biggest problems by training folks to:            
             </p>
+            <h3>CULTIVATE VISION</h3>
            </div>
            
 
@@ -51,7 +59,6 @@ const Header = () => (
 );
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.sm}) {

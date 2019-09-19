@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: ${props => props.theme.font.secondary};
+    background-color: #2b2f44; /* Navy Blue  */
   }
 
   h1, h2, h3, p {
@@ -16,8 +17,9 @@ const GlobalStyles = createGlobalStyle`
     font-weight: normal;
   }
 
-  h1, h2 {
+  h1, h2, h3 {
     font-family: ${props => props.theme.font.primary};
+    color: ${props => props.theme.color.black.regular};
   }
 
   h1 {
@@ -29,12 +31,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h3 {
-    ${props => props.theme.font_size.regular};
+    ${props => props.theme.font_size.small};
+    letter-spacing: 0.1rem;
+    margin-top: 5px;
+    ${props => props.theme.color.black.regular};
   }
 
   p {
     ${props => props.theme.font_size.regular};
-    color: ${props => props.theme.color.black.light};
+    color: ${props => props.theme.color.black.lighter};
   }
 
   @media (max-width: ${props => props.theme.screen.sm}) {

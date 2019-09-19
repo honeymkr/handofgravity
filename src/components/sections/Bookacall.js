@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
+import Calendly from '@sections/Calendly';
 
 const BookaCall = () => (
   <StaticQuery
@@ -27,7 +28,7 @@ const BookaCall = () => (
   <Grid>
       <div>
 
-            <h3>Free Intro Session</h3>
+            <h2>Free Intro Session</h2>
               <p>
                 Let's talk about your vision! Books, more videos and research are only going 
                 to serve to get minimal results beyond sounding smart at parties. 
@@ -48,9 +49,7 @@ const BookaCall = () => (
     </Button>
     </div>
          
-          <Art>
-            <Img fluid={data.art_book.childImageSharp.fluid} />
-          </Art>
+         <Calendly />
 
   </Grid>
 </Container>
@@ -67,7 +66,6 @@ const Grid = styled.div`
   align-items: center;
   justify-items: center;
   margin: 24px 0;
-  background-color: white;
 
   ${props =>
     props.inverse &&

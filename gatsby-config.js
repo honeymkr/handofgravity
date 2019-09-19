@@ -30,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `Hand Of Gravity Coaching`,
+        short_name: `HOG`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,
@@ -42,7 +42,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`average`, `prata\:400,700`],
+        fonts: [
+          `Cinzel`,
+          `serif`],
+        display: 'swap'
       },
     },
     {

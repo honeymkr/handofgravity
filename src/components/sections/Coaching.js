@@ -21,7 +21,7 @@ const Coaching = () => (
   }
 `}
     render={data => (
-      <Section id="coaching">
+      <Section id="coaching" accent>
         <Container>
         <Grid>
           

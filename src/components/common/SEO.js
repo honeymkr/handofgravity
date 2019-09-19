@@ -5,7 +5,7 @@ const SEO_DATA = {
   description: 'Visionary Coaching by Jason Faulkner',
   title: 'Hand Of Gravity',
   url: 'handofgravity.com',
-  author: 'ajayns',
+  author: 'Jason Faulkner',
   keywords: ['coaching', 'creativity', 'focus'],
   twitter: {
     id: '@handofgravity',
@@ -40,7 +40,10 @@ const SEO = () => {
       <meta name="author" content={SEO_DATA.author} />
       <title>{SEO_DATA.title}</title>
       <html lang="en" />
-    </Helmet>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+       </Helmet>
+
   );
 };
 
