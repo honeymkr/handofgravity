@@ -28,10 +28,14 @@ const BookaCall = () => (
   <Grid>
       <div>
 
-            <h2>Get to the Source</h2>
-            <h3>When discovering hidden value in your work will give you peace of mind.</h3>
-            <h3>When expanding your vision will put an end to missing out on financial goals.</h3>
-            <h3>Book a Free Breakthrough call with me to get started today.</h3>
+            <h2>Your Breakthrough is Calling</h2>
+            <h3>Let's Talk!</h3>
+            <h3>Discover hidden value in your work or project in a 45 minute conversation.</h3>
+            <h3>We will expand your vision, leaving you inspired and completely clear about whether signing up 
+              for Hand Of Gravity Coaching is right for you.</h3>
+            <h3>Book a Free Breakthrough call with me today.</h3>
+            <h3>Pick a date on the Calendly app here and follow the prompt.
+            </h3>
               
     </div>
          
