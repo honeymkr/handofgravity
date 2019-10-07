@@ -26,13 +26,12 @@ const Coaching = () => (
         <Grid>
           
           <div>
-              <h2>Visionary Coaching</h2>
-              <p>
-            Do you have a major project that's stalling? Do you have the sense of 'doing everything on your own'?
-            Big projects are riddled with circumstances that can leave leadership tired, feeling like they can't find 
-            the right help! 
-              </p>
-              <p>If you're tired of spinning your wheels - you've come to the right place.</p>
+              <h2>Who would you be?</h2>
+              <h3>If it was fun to dance with the unkown.</h3>
+              <h3>If you inspired everybody around you so that your field of Gravity expanded 20x causing ppl to want to join your cause.</h3>
+              <h2>Who would you be?</h2>
+              <h3>If ppl think you are a genius.</h3>
+              <h3>If you were finally unleashed.</h3>
               </div>
          
             <Art>

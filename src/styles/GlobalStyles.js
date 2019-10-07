@@ -27,14 +27,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
+    margin-top: 1rem;
     ${props => props.theme.font_size.larger};
   }
 
   h3 {
     ${props => props.theme.font_size.small};
     letter-spacing: 0.1rem;
-    margin-top: 5px;
-    ${props => props.theme.color.black.regular};
+    margin-top: 1rem;
+    color: ${props => props.theme.color.black.lighter};
   }
 
   p {

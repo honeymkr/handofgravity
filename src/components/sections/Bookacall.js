@@ -28,25 +28,11 @@ const BookaCall = () => (
   <Grid>
       <div>
 
-            <h2>Free Intro Session</h2>
-              <p>
-                Let's talk about your vision! Books, more videos and research are only going 
-                to serve to get minimal results beyond sounding smart at parties. 
-                
-                On the free call - we will expand and illuminate your project to identify 
-                new possibilities that have been hidden from you and your customers.
-
-                Then we will talk about whether Hand Of Gravity is right for you!
-              </p>
+            <h2>Get to the Source</h2>
+            <h3>When discovering hidden value in your work will give you peace of mind.</h3>
+            <h3>When expanding your vision will put an end to missing out on financial goals.</h3>
+            <h3>Book a Free Breakthrough call with me to get started today.</h3>
               
-  <Button
-      href="https://calendly.com/handofgravity/"
-      target="_blank"
-      rel="noopener"
-      primary
-    >
-      Book A Breakthrough Session Now
-    </Button>
     </div>
          
          <Calendly />

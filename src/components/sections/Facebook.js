@@ -26,18 +26,20 @@ const Facebook = () => (
   <Container>
     <Grid>
           <div>
-        <h2>Join Our Facebook Group</h2>
-        <p>We've set up a Facebook group to host a community conversation about Being Visionary. 
-          We share weekly insights and feature members to highlight their transformations!
-          Discover breakthroughs that people are getting by working with me:
-       </p>
+        <h2>Community Is Everything</h2>
+        <h3>You can't change the world but everyone can  ;)</h3>
+        <h3>This happens when we band together to grow and foster each other's vision to shake things
+          up in your established industry.</h3>
+          <h3>Join us via Facebook to learn more, share feedback, and ask questions. You can follow us for 
+            upcoming special events in New York City &amp; get the scoop on special offers:
+          </h3>
           <Button
       href="https://www.facebook.com/Hand-Of-Gravity-2303130916616921"
       target="_blank"
       rel="noopener"
       primary
     >
-      Join Our Facebook Community
+      Hand Of Gravity - Facebook Page
     </Button>
            
         </div>

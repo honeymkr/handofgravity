@@ -32,23 +32,21 @@ const Header = () => (
               <Img fluid={data.art_logo.childImageSharp.fluid} />
             </Art>
 
-           <div>  <h2>Visionary Coaching</h2>
-           <p>
-            I work with successful people to expand their visions. I create
-            clarity, inspiration, and transformations in people's businesses, teams or projects
-            so that they're unleashed in life. 
-            <br/>
-            Vision is what carries the spirit of big ideas and brings things to existence. It's such a vital element
-            yet most people take Vision for granted. I see business owners struggle all the time with what 
-            they Think are their problems - unmotivated employees, doing everything themselves, circumstances and more.
-            <br/>
-            A lot of successful people feeling frustrated and drained! 
-            <br/>
-            I empower people to discover
-            and transform their biggest problems by training folks to:            
-            </p>
-            <h3>CULTIVATE VISION</h3>
-           </div>
+           <div>  
+             <h1>Visionary Coaching</h1>
+             <h3>Do you struggle to maintain creativity?</h3>
+             <h3>How do you stay inspired in the face of your circumstances?</h3>
+             <h3>The difference between a visionary and someone with some great ideas
+               is that a visionary knows how to cultivate vision and manage their fears.
+               By this spirit, a visionary maintains creativity that seems ahead of the curve
+               and is unstoppable in their pursuits which change the world!</h3>
+             <h3>Hand Of Gravity Coaching is a 2 month course that trains you to be visionary.</h3>
+             </div>
+        
+            <div>
+             <h3>What would it be like to have New depth of clarity about your 
+               business, startup idea, project or career change?</h3>
+            </div>
            
 
           </Grid>
