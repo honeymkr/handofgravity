@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -36,10 +36,14 @@ const Header = () => (
              <h1>Visionary Coaching</h1>
              <h3>Do you struggle to maintain creativity?</h3>
              <h3>How do you stay inspired in the face of your circumstances?</h3>
-             <h3>The difference between a visionary and someone with some great ideas
-               is that a visionary knows how to cultivate vision and manage their fears.
-               By this spirit, a visionary maintains creativity that seems ahead of the curve
-               and is unstoppable in their pursuits which change the world!</h3>
+             <Button
+      href="https://calendly.com/handofgravity/"
+      target="_blank"
+      rel="noopener"
+      primary
+    >
+      Schedule an Envisioning Session
+    </Button>
              <h3>Hand Of Gravity Coaching is a 2 month course that trains you to be visionary.</h3>
              </div>
         
@@ -91,6 +95,26 @@ const Grid = styled.div`
       order: 0;
     }
   }
+`;
+
+ const Button = styled.a`
+  display: inline-block;
+  border-radius: 9px;
+  padding: 0.7rem 0.5rem;
+  margin: 0.5rem 1rem;
+  background: red;
+  color: black;
+  font-family: 'Avenir',sans-serif;
+  text-decoration: none;
+  font-size: 2rem;
+
+${props => props.animated && css`
+    &:hover {
+      position: fixed;
+      transform: translate(0%, -30%);
+      transition: 0.3s ease-out;
+    }
+  `}
 `;
 
 
