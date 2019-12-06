@@ -1,8 +1,10 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
+import Calendly from '@sections/Calendly';
 
 const BookaCall = () => (
   <StaticQuery
@@ -26,26 +28,21 @@ const BookaCall = () => (
   <Grid>
       <div>
 
-           <Button
-      href="https://calendly.com/handofgravity/"
-      target="_blank"
-      rel="noopener"
-      primary
-    >
-      Schedule an Envisioning Session Here!
-    </Button>
-
-            <h3>Let's Talk.</h3>
-            <h3>Discover hidden value in your work or project in a 45 minute conversation.</h3>
-            <h3>We will expand your vision, leaving you inspired and completely clear about whether signing up 
-              for Hand Of Gravity Coaching is right for you.</h3>
-            <h3>Book a Free Breakthrough call with me today.</h3>
-            <h3>Pick a date on the Calendly app here and follow the prompt.
+            <h2>Your Breakthrough is Calling</h2>
+            <h3>
+            By going to work on Your Vision together, we illuminate untapped potential
+            and discover hidden opportunity in your work. 
+            </h3>
+            
+            <h3>
+            Book a FREE 45 minute call to learn more about Visionary Coaching. </h3>
+            <h3> 
+            Hand Of Gravity expands your Vision to attract the clients &amp; help you really want.
             </h3>
               
     </div>
          
-       
+         <Calendly />
 
   </Grid>
 </Container>
@@ -93,16 +90,17 @@ const Grid = styled.div`
   }
 `;
 
-  const Button = styled.a`
-  display: inline-block;
-  border-radius: 9px;
-  padding: 0.7rem 0.5rem;
-  margin: 0.5rem 1rem;
-  background: red;
-  color: black;
-  font-family: 'Avenir',sans-serif;
-  text-decoration: none;
-  font-size: 2rem;
+const Button = styled.a`
+/* This renders the buttons above... Edit me! */
+display: inline-block;
+border-radius: 9px;
+padding: 0.7rem 0.5rem;
+margin: 0.5rem 1rem;
+background: red;
+color: black;
+font-family: 'Avenir',sans-serif;
+text-decoration: none;
+font-size: 2rem;
 
 ${props => props.animated && css`
     &:hover {

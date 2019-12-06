@@ -29,29 +29,25 @@ const Header = () => (
         <Container>
           <Grid>
               <Art>
-              <Img fluid={data.art_logo.childImageSharp.fluid} />
+              <iframe title="Creativity Now" width="560" height="315" src="https://www.youtube.com/embed/mpTNaciptAs" 
+              frameBorder="0" samesite="None" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </Art>
-
            <div>  
-             <h1>Visionary Coaching</h1>
-             <h3>Do you struggle to maintain creativity?</h3>
-             <h3>How do you stay inspired in the face of your circumstances?</h3>
-             <Button
-      href="https://calendly.com/handofgravity/"
-      target="_blank"
-      rel="noopener"
-      primary
-    >
-      Schedule an Envisioning Session
-    </Button>
-             <h3>Hand Of Gravity Coaching is a 2 month course that trains you to be visionary.</h3>
+             <h1>Visionary Coaching</h1>  
+              <h3>
+              Creativity is code for Freedom. Where we find ourselves limited in
+              what we see is possible for our business,
+              startup or project idea - this is when we experience a 
+              lack of Freedom concerning our Vision. The fear of failure creeps in quietly,
+              infecting our sense of Inspiration, draining our energy with daily 
+              anxiety &amp; frustrations.
+             </h3>
+             <h3>
+               What would it be like to Be unleashed creatively? How would Being
+               incredibly inspired every day make a difference for you?
+             </h3>
              </div>
         
-            <div>
-             <h3>What would it be like to have New depth of clarity about your 
-               business, startup idea, project or career change?</h3>
-            </div>
-           
 
           </Grid>
         </Container>

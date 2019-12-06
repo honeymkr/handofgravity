@@ -26,12 +26,19 @@ const Coaching = () => (
         <Grid>
           
           <div>
-              <h2>Who would you be?</h2>
-              <h3>If it was fun to dance with the unkown.</h3>
-              <h3>If you inspired everybody around you so that your field of Gravity expanded 20x causing ppl to want to join your cause.</h3>
-              <h2>Who would you be?</h2>
-              <h3>If ppl think you are a genius.</h3>
-              <h3>If you were finally unleashed.</h3>
+              <h2>For Entrepreneurs &amp; Artists</h2>
+              
+            <h3>
+            People like yourself create awesome ideas which start off with 
+            a huge bang of excitement. Then, as you put Your vision out there in the world - 
+            what actually happens? What do you find yourself up against inevitably?
+            </h3>
+            
+            <h3>
+            The judgement &amp; perspectives of other people push us into constant reflection,
+            causing us to Think things over, to Analyze our actions, leading to procrastination and a 
+            lack of real follow through so that your Vision never really sees the light of day.
+            </h3>
               </div>
          
             <Art>
