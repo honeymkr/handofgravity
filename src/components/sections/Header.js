@@ -35,16 +35,17 @@ const Header = () => (
            <div>  
              <h1>Visionary Coaching</h1>  
               <h3>
-              Creativity is code for Freedom. Where we find ourselves limited in
-              what we see is possible for our business,
-              startup or project idea - this is when we experience a 
-              lack of Freedom concerning our Vision. The fear of failure creeps in quietly,
-              infecting our sense of Inspiration, draining our energy with daily 
-              anxiety &amp; frustrations.
+              Creativity is code for Freedom. When we find ourselves limited in
+              what we think is possible for our business,
+              startup or projects we experience a 
+              lack of Freedom and a fear of failure which
+              infects our sense of Inspiration, draining our energy with daily 
+              anxiety &amp; frustrations. 
              </h3>
              <h3>
-               What would it be like to Be unleashed creatively? How would Being
-               incredibly inspired every day make a difference for you?
+               What would it be like to Be unconstrained creatively? What would it be like to have 
+               clarity, confidence and inspiration that attracted the right clients &amp; help?
+               
              </h3>
              </div>
         

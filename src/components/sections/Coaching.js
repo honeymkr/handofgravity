@@ -26,18 +26,13 @@ const Coaching = () => (
         <Grid>
           
           <div>
-              <h2>For Entrepreneurs &amp; Artists</h2>
+              <h2>For Entrepreneurs &amp; Creatives</h2>
               
             <h3>
-            People like yourself create awesome ideas which start off with 
-            a huge bang of excitement. Then, as you put Your vision out there in the world - 
-            what actually happens? What do you find yourself up against inevitably?
-            </h3>
-            
-            <h3>
-            The judgement &amp; perspectives of other people push us into constant reflection,
-            causing us to Think things over, to Analyze our actions, leading to procrastination and a 
-            lack of real follow through so that your Vision never really sees the light of day.
+            Visionary coaching is for people who are already in business and already have bustling projects. Further,
+            this is for people who have been procrastinating about a passion project or startup idea and have been sitting on their hands waiting
+            for the right conditions to act.
+
             </h3>
               </div>
          

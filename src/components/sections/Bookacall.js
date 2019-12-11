@@ -23,7 +23,7 @@ const BookaCall = () => (
       }
     `}
     render={data => (
-      <Section id="book-a-call" accent>
+      <Section id="book-a-call">
 <Container>
   <Grid>
       <div>
@@ -35,14 +35,19 @@ const BookaCall = () => (
             </h3>
             
             <h3>
-            Book a FREE 45 minute call to learn more about Visionary Coaching. </h3>
-            <h3> 
-            Hand Of Gravity expands your Vision to attract the clients &amp; help you really want.
-            </h3>
+            Book a FREE 45-60 minute call to learn more about Visionary Coaching. </h3>
+            <Button
+      href="https://calendly.com/handofgravity/"
+      target="_blank"
+      rel="noopener"
+      primary
+    >
+      Schedule an Envisioning Session Here!
+    </Button>
               
     </div>
          
-         <Calendly />
+  
 
   </Grid>
 </Container>
@@ -55,10 +60,10 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-gap: 40px;
-  text-align: right;
+  text-align: left;
   align-items: center;
   justify-items: center;
-  margin: 24px 0;
+  margin: 0;
 
   ${props =>
     props.inverse &&
@@ -74,12 +79,7 @@ const Grid = styled.div`
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     text-align: left;
-    margin-bottom: 96px;
-
-    &:last-child {
-      margin-bottom: 24px;
-    }
-
+  }
     ${props =>
       props.inverse &&
       `
@@ -96,7 +96,7 @@ display: inline-block;
 border-radius: 9px;
 padding: 0.7rem 0.5rem;
 margin: 0.5rem 1rem;
-background: red;
+background: skyblue;
 color: black;
 font-family: 'Avenir',sans-serif;
 text-decoration: none;
