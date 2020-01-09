@@ -37,10 +37,13 @@ const Workshop = () => (
 
 Distracted by social media, the news, our mobile devices - our brains constantly comparing ourselves which leads to doubt, or not feeling ready to take new direction,
 
-A fear of rejection is often the biggest threat to being bold, next to being responsible for what we create and follow through on.
-
+</h4>
+<h4>A fear of rejection is often the biggest threat to being bold, next to being responsible for what we create and follow through on.
+</h4>
+<h4>
 Proven strategies are addictive because we are lazy.
-
+</h4>
+<h4>
 Fitting in to be validated with our work rips off the audience and dulls our creative edge. Inspiration goes missing when we can’t generate our own.
 
 This is a workshop intensive about discovery for new creative results for your brand, business idea, art.
