@@ -38,6 +38,13 @@ const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.color.black.lighter};
   }
 
+  h4 {
+    ${props => props.theme.font_size.tiny};
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    color: ${props => props.theme.color.black.lighter};
+  }
+
   p {
     ${props => props.theme.font_size.regular};
     color: ${props => props.theme.color.black.lighter};

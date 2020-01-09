@@ -4,6 +4,7 @@ const theme = {
     secondary: `'Arial', sans-serif`,
   },
   font_size: {
+    tiny: 'font-size: 16px; line-height: 23px',
     small: 'font-size: 20px; line-height: 30px',
     regular: 'font-size: 18px; line-height: 24px',
     large: 'font-size: 30px; line-height: 40px',

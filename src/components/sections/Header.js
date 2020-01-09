@@ -1,7 +1,6 @@
 import React from 'react';
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 
@@ -94,25 +93,6 @@ const Grid = styled.div`
   }
 `;
 
- const Button = styled.a`
-  display: inline-block;
-  border-radius: 9px;
-  padding: 0.7rem 0.5rem;
-  margin: 0.5rem 1rem;
-  background: red;
-  color: black;
-  font-family: 'Avenir',sans-serif;
-  text-decoration: none;
-  font-size: 2rem;
-
-${props => props.animated && css`
-    &:hover {
-      position: fixed;
-      transform: translate(0%, -30%);
-      transition: 0.3s ease-out;
-    }
-  `}
-`;
 
 
 export default Header;
