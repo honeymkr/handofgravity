@@ -1,23 +1,31 @@
-import React, { Component} from "react";
-import styled, { css } from 'styled-components';
+import React from 'react';
 
-class Calendly extends Component {
-  render(){
+class Calendly extends React.Component {
+  calendlyScriptSrc = 'https://assets.calendly.com/assets/external/widget.js';
+
+  componentDidMount() {
+    const head = document.querySelector('head');
+    const script = document.createElement('script');
+    script.setAttribute('src', this.calendlyScriptSrc);
+    head.appendChild(script);
+  }
+
+  componentWillUnmount() {
+    const head = document.querySelector('head');
+    const script = document.querySelector('script');
+    head.removeChild(script);
+  }
+  render() {
     return (
-      <div>
       <div id="schedule_form">
-        <div className="calendly-inline-widget" data-url="https://calendly.com/handofgravity" 
-        style={{ width:'320px', height:'580px',}}></div>
+        <div
+          className="calendly-inline-widget"
+          data-url="https://calendly.com/handofgravity"
+          style={{ minWidth: '480px', height: '640px' }}
+        />
       </div>
-    </div>
     );
   }
-};
-
-const CalendlyForm = styled.div`
-min-width:320px;
-height:580px;
-  `;
-
+}
 
 export default Calendly;

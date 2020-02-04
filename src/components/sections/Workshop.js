@@ -1,62 +1,45 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 
 const Workshop = () => (
-  <StaticQuery
-  query={graphql`
-  query {
-    creativity_wkshp: file(
-      sourceInstanceName: { eq: "art" }
-      name: { eq: "workshop" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 615) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-  }
-`}
-    render={data => (
+
       <Section id="workshop" accent>
         <Container>
         <Grid>
           
           <div>
-              <Heady>Hand Of Gravity Coaching</Heady>
-              <Art>
-              <Img fluid={data.creativity_wkshp.childImageSharp.fluid} />
-            </Art>
+          <h1>Being Visionary</h1>
+          <h2>Creativity Masterclass</h2>
+          <h3>February 19th, 2020 ~ Greenpoint, Brooklyn</h3>
+<p>
+We know ourselves to be creative yet we struggle to maintain inspiration, vision, and uphold our value at times. What’s important is making our audience, our clients, and our customers happy but this can be difficult when we have doubts or anxiety because we’re trying to get things right and we have a fear of failure.
 
-            <h4>
-            We live in a world of information overload that takes a toll on the quality of our creative output. 
+</p>
+<p>
+There are plenty of proven strategies out there to follow. However, fitting in to be validated with our wok rips off the audience and dulls our creative edge. Also, where we accept sacrifice as necessary for success, we sell out, leaving ourselves exhausted & frustrated.
 
-Distracted by social media, the news, our mobile devices - our brains constantly comparing ourselves which leads to doubt, or not feeling ready to take new direction,
+</p>
+<p>
+So, what could you do with an unlimited way of being inspired? What kinds of results could you create with unlimited focus and energy? 
+</p>
+<p>
+‘Being Creative’ is a workshop developed by Hand of Gravity Coaching to train people to expand their creativity, master the art of inspiration, and solve difficult business problems using techniques from the world of product development.
+</p>
+<p>
+Sign up now and bring your problems to the table. We are going to work together as a small group, in person and online, to unleash your vision!
 
-</h4>
-<h4>A fear of rejection is often the biggest threat to being bold, next to being responsible for what we create and follow through on.
-</h4>
-<h4>
-Proven strategies are addictive because we are lazy.
-</h4>
-<h4>
-Fitting in to be validated with our work rips off the audience and dulls our creative edge. Inspiration goes missing when we can’t generate our own.
-
-This is a workshop intensive about discovery for new creative results for your brand, business idea, art.
-
-            </h4>
+</p>
+           
 
 <Button
-      href="https://www.eventbrite.com/e/being-visionary-creativity-masterclass-tickets-89074928509?aff=pilot1"
+      href="http://bit.ly/handofgravity"
       target="_blank"
       rel="noopener"
       primary
     >
-   Purchase your Tickets
+   Purchase a Ticket
     </Button>
 
 
@@ -67,8 +50,7 @@ This is a workshop intensive about discovery for new creative results for your b
           </Grid>
         </Container>
       </Section>
-    )}
-  />
+  
 );
 
 const Grid = styled.div`
@@ -108,15 +90,6 @@ const Grid = styled.div`
         }
     `}
   }
-`;
-
-const Art = styled.figure`
-  margin: 0;
-  max-width: 615px;
-  width: 100%;
-`;
-const Heady = styled.h2`
-color: red;
 `;
 
 const Button = styled.a`

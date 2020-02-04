@@ -29,21 +29,7 @@ const BookaCall = () => (
       <div>
 
             <h2>Your Breakthrough is Calling</h2>
-            <h3>
-            By going to work on Your Vision together, we illuminate untapped potential
-            and discover hidden opportunity in your work. 
-            </h3>
-            
-            <h3>
-            Book a FREE 45-60 minute call to learn more about Visionary Coaching. </h3>
-            <Button
-      href="https://calendly.com/handofgravity/"
-      target="_blank"
-      rel="noopener"
-      primary
-    >
-      Schedule an Envisioning Session Here!
-    </Button>
+            <Calendly />
               
     </div>
          
@@ -59,7 +45,6 @@ const BookaCall = () => (
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-gap: 40px;
   text-align: left;
   align-items: center;
   justify-items: center;
